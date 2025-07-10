@@ -16,6 +16,6 @@ INSTRUCTIONS:
 6. Run 
 7. Run admin_ui.py
 8. Run LoginWINDOW.py
-9. UserInterface.py
+9. Run UserInterface.py
 
  
