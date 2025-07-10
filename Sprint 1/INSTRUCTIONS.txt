@@ -8,7 +8,7 @@ Login UI ---> mock database (txt file) ---> User UI
 Admin UI ---> pedal power database (only lists out the users from the database)
 
 INSTRUCTIONS:
-1. git clone (repository url)  
+1. git clone https://github.com/Wixalot/CPE106L---Project-Pedal-Power.git  
 2. Change Directory to the repository folder (cd (folder name)) 
 3. Create a virtual environment  
 4. Install requirements in the requirements.txt by using pip install –r requirements.txt 
