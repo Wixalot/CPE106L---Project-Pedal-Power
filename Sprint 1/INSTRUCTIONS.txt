@@ -12,8 +12,8 @@ INSTRUCTIONS:
 2. Change Directory to the repository folder (cd (folder name)) 
 3. Create a virtual environment  
 4. Install requirements in the requirements.txt by using pip install –r requirements.txt 
-5. Change Directory to UIs
-6. Run 
+5. Change Directory to UIs (cd UIs)
+6. Run the following:
 7. Run admin_ui.py
 8. Run LoginWINDOW.py
 9. Run UserInterface.py
