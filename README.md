@@ -4,3 +4,6 @@ Pedal Power is an interactive, Python-based GUI program that encourages sustaina
 
 ## Gantt Chart:
 [Project_Sked_Group01](https://docs.google.com/spreadsheets/d/1TuE7x89GRS05zJyl8QOWVK-FwZRFPlmw/edit?usp=sharing&ouid=105836029849052124078&rtpof=true&sd=true)
+
+## Sprint 1:
+[Instructions](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/e18c529767c2e2c8f2272d48a89d00d4f6298a5e/Sprint%201/INSTRUCTIONS.txt)
