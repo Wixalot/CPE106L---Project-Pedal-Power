@@ -1,0 +1,17 @@
+NOTE: For sprint 1, it was focused on UI and database creation as seen in the Gantt chart therefore some connections are not yet established and some buttons are clickable but only prints messages in terminal. Connections for all UIs will be established in Sprint 2.
+
+Here are the connections:
+
+Login UI ---> mock database (txt file) ---> User UI
+
+Admin UI ---> pedal power database (only lists out the users from the database)
+
+INSTRUCTIONS:
+1. git clone (repository url)  
+2. Change Directory to the repository folder (cd (folder name)) 
+3. Create a virtual environment  
+4. Install requirements in the requirements.txt by using pip install –r requirements.txt 
+5. Run 
+6. Run admin_ui.py
+
+ 
