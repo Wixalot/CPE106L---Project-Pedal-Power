@@ -1,7 +1,7 @@
 NOTE: For sprint 1, it was focused on UI and database creation as seen in the Gantt chart therefore some connections are not yet established and 
 some buttons are clickable but only prints messages in terminal. Connections for all UIs will be established in Sprint 2.
 
-Python version should be 3.1X
+Python version should be 3.10 or later
 
 Here are the connections:
 
@@ -15,6 +15,8 @@ INSTRUCTIONS:
 1.1. You must install git first sudo apt install git
 2. Change Directory to the repository folder (cd (folder name)) 
 3. Create a virtual environment  (python3 -m venv (venv_name))
+3.1. You must install your required venv first before continuing sudo apt install python3.1X-venv
+NOTE! X stands for the version of python you have
 4. Activate virtual environment (source venv_name/bin/activate)
 5. Change Directory to Sprint 1
 6. Install requirements in the requirements.txt by using pip install –r Requirements.txt 
