@@ -4,7 +4,6 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QLin
 from PyQt5.QtGui import QFont
 from PyQt5.QtCore import Qt
 
-
 class LoginWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -154,11 +153,24 @@ class LoginWindow(QMainWindow):
                 user_result = cursor.fetchone()
 
                 if admin_result:
-                    print("Admin login successful.")
+
+                    from admin_ui import AdminWindow as admin
+
                     # Work in Progress: This should be replaced with actual admin UI logic
                     # from AdminInterface import Admin_Interface_Window as AdminUI
                     # self.admin_ui_window = AdminUI()
                     # self.admin_ui_window.show()
+
+                    # closing the login window before opening the next UI
+                    self.close()
+
+                    # Show the admin interface window
+                    self.admin_window = admin()
+                    self.admin_window.show()
+
+                    # clear the input fields after successful login
+                    self.username_input.clear()
+                    self.password_input.clear()
 
                 elif user_result:
 
