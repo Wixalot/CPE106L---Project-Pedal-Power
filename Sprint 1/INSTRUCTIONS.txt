@@ -9,8 +9,10 @@ Login UI ---> mock database (txt file) ---> User UI
 
 Admin UI ---> pedal power database (only lists out the users from the database)
 
+
 INSTRUCTIONS:
-1. git clone https://github.com/Wixalot/CPE106L---Project-Pedal-Power.git  
+1. git clone https://github.com/Wixalot/CPE106L---Project-Pedal-Power.git
+1.1. You must install git first sudo apt install git
 2. Change Directory to the repository folder (cd (folder name)) 
 3. Create a virtual environment  (python3 -m venv (venv_name))
 4. Activate virtual environment (source venv_name/bin/activate)
