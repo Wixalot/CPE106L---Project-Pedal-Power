@@ -1,6 +1,8 @@
 NOTE: For sprint 1, it was focused on UI and database creation as seen in the Gantt chart therefore some connections are not yet established and 
 some buttons are clickable but only prints messages in terminal. Connections for all UIs will be established in Sprint 2.
 
+Python version should be 3.13.5
+
 Here are the connections:
 
 Login UI ---> mock database (txt file) ---> User UI
