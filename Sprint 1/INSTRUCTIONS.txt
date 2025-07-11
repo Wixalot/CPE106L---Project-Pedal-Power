@@ -14,10 +14,9 @@ INSTRUCTIONS:
 4. Activate virtual environment (source venv_name/bin/activate)
 5. Change Directory to Sprint 1
 6. Install requirements in the requirements.txt by using pip install –r Requirements.txt 
-7. Change Directory to UIs (cd UIs)
-8. Run the following:
-9. Run admin_ui.py
-10. Run LoginWINDOW.py
-11. Run UserInterface.py
+7. Run the following: using python UIs/FileName.py
+8. Run admin_ui.py
+9. Run LoginWINDOW.py
+10. Run UserInterface.py
 
  
