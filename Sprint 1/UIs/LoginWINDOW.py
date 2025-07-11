@@ -1,8 +1,14 @@
 import sys
+import os
 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QLineEdit, QRadioButton
 from PyQt5.QtGui import QFont
 from PyQt5.QtCore import Qt
+
+# Path to the database file
+# Assuming the database is located in a folder named "Database" at the same level as this
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_NAME = os.path.join(BASE_DIR, "..", "Database", "pedalpower.db")
 
 
 class LoginWindow(QMainWindow):
@@ -174,31 +180,6 @@ class LoginWindow(QMainWindow):
                     # Clear the input fields after successful login
                     self.username_input.clear()
                     self.password_input.clear()
-
-                # with open(file_path, "r") as file:
-
-                #     # Reading the file line by line
-                #     for line in file:
-                #         user, pwd = line.strip().split(",")
-                #         usernames.append(user)
-                #         passwords.append(pwd)
-
-                # if username in usernames and password in passwords:
-                #     # Work in Progress: This should be replaced with actual database connection logic
-
-                #     # Import your main UI window class
-                #     from UserInterface import User_Interface_Window as UI
-
-                #     # Successful login
-                #     self.close()  # Close the login window before opening the next UI
-
-                #     # Show the main user interface window
-                #     self.ui_window = UI()
-                #     self.ui_window.show()
-
-                #     # Clear the input fields after successful login
-                #     self.username_input.clear()
-                #     self.password_input.clear()
 
                 else:
                     print("Login failed. Please check your username and password.")
