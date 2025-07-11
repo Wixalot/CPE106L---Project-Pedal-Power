@@ -132,31 +132,40 @@ class LoginWindow(QMainWindow):
             username = self.username_input.text()
             password = self.password_input.text()
 
-            # Lists to store usernames and passwords
-            usernames = []
-            passwords = []
-
-            # Path to the file containing usernames and passwords
-            file_path = "Database/Users.txt"
+            # Path to the file containing the Database of both admin and user credentials
+            file_path = "Database/pedalpower.db"
 
             # try block to read the file and compare for a successful login
             try:
-                with open(file_path, "r") as file:
 
-                    # Reading the file line by line
-                    for line in file:
-                        user, pwd = line.strip().split(",")
-                        usernames.append(user)
-                        passwords.append(pwd)
+                import sqlite3
 
-                if username in usernames and password in passwords:
-                    # Work in Progress: This should be replaced with actual database connection logic
+                connection = sqlite3.connect(file_path)
+                cursor = connection.cursor()
 
-                    # Import your main UI window class
+                # Checking if the username and password match in the admin table
+                cursor.execute(
+                    "SELECT * FROM Admins WHERE username=? AND password=?", (username, password))
+                admin_result = cursor.fetchone()
+
+                # Check user table
+                cursor.execute(
+                    "SELECT * FROM Users WHERE username=? AND password=?", (username, password))
+                user_result = cursor.fetchone()
+
+                if admin_result:
+                    print("Admin login successful.")
+                    # Work in Progress: This should be replaced with actual admin UI logic
+                    # from AdminInterface import Admin_Interface_Window as AdminUI
+                    # self.admin_ui_window = AdminUI()
+                    # self.admin_ui_window.show()
+
+                elif user_result:
+
                     from UserInterface import User_Interface_Window as UI
 
-                    # Successful login
-                    self.close()  # Close the login window before opening the next UI
+                    # closing the login window before opening the next UI
+                    self.close()
 
                     # Show the main user interface window
                     self.ui_window = UI()
@@ -165,6 +174,31 @@ class LoginWindow(QMainWindow):
                     # Clear the input fields after successful login
                     self.username_input.clear()
                     self.password_input.clear()
+
+                # with open(file_path, "r") as file:
+
+                #     # Reading the file line by line
+                #     for line in file:
+                #         user, pwd = line.strip().split(",")
+                #         usernames.append(user)
+                #         passwords.append(pwd)
+
+                # if username in usernames and password in passwords:
+                #     # Work in Progress: This should be replaced with actual database connection logic
+
+                #     # Import your main UI window class
+                #     from UserInterface import User_Interface_Window as UI
+
+                #     # Successful login
+                #     self.close()  # Close the login window before opening the next UI
+
+                #     # Show the main user interface window
+                #     self.ui_window = UI()
+                #     self.ui_window.show()
+
+                #     # Clear the input fields after successful login
+                #     self.username_input.clear()
+                #     self.password_input.clear()
 
                 else:
                     print("Login failed. Please check your username and password.")
