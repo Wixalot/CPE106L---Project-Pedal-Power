@@ -18,6 +18,7 @@ INSTRUCTIONS:
 3.1. You must install your required venv first before continuing sudo apt install python3.1X-venv
 NOTE! X stands for the version of python you have
 4. Activate virtual environment (source venv_name/bin/activate)
+4.1. Replace venv_name with your own venv name
 5. Change Directory to Sprint 1
 6. Install requirements in the requirements.txt by using pip install –r Requirements.txt 
 7. Run the following: using python UIs/FileName.py
