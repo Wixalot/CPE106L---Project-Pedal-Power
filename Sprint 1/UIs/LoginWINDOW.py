@@ -1,14 +1,8 @@
 import sys
-import os
 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QLineEdit, QRadioButton
 from PyQt5.QtGui import QFont
 from PyQt5.QtCore import Qt
-
-# Path to the database file
-# Assuming the database is located in a folder named "Database" at the same level as this
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_NAME = os.path.join(BASE_DIR, "..", "Database", "pedalpower.db")
 
 
 class LoginWindow(QMainWindow):

@@ -37,7 +37,7 @@ class User_Interface_Window(QMainWindow):
         # Log Out button
         LogOut = QPushButton("", self)
         LogOut.setGeometry(705, 40, 40, 40)
-        LogOut.setIcon(QIcon("Assets\power-off.png"))
+        LogOut.setIcon(QIcon("Assets/power-off.png"))
         LogOut.setIconSize(QSize(30, 30))
         LogOut.setStyleSheet("""
             QPushButton {
