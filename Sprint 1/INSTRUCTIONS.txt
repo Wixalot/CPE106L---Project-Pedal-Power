@@ -10,12 +10,13 @@ Admin UI ---> pedal power database (only lists out the users from the database)
 INSTRUCTIONS:
 1. git clone https://github.com/Wixalot/CPE106L---Project-Pedal-Power.git  
 2. Change Directory to the repository folder (cd (folder name)) 
-3. Create a virtual environment  
-4. Install requirements in the requirements.txt by using pip install –r requirements.txt 
-5. Change Directory to UIs (cd UIs)
-6. Run the following:
-7. Run admin_ui.py
-8. Run LoginWINDOW.py
-9. Run UserInterface.py
+3. Create a virtual environment  (python3 -m venv (venv_name))
+4. Activate virtual environment (source venv_name/bin/activate)
+5. Install requirements in the requirements.txt by using pip install –r requirements.txt 
+6. Change Directory to UIs (cd UIs)
+7. Run the following:
+8. Run admin_ui.py
+9. Run LoginWINDOW.py
+10. Run UserInterface.py
 
  
