@@ -6,8 +6,8 @@ Pedal Power is an interactive, Python-based GUI program that encourages sustaina
 [Project_Sked_Group01](https://docs.google.com/spreadsheets/d/1TuE7x89GRS05zJyl8QOWVK-FwZRFPlmw/edit?usp=sharing&ouid=105836029849052124078&rtpof=true&sd=true)
 
 ## Sprint 1 - 2:
-[Instructions](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/43da937add11b87ddb4a5eccbc1691d5014635dc/Sprint%201/INSTRUCTIONS.txt)
-[Dependencies](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/2145980d9d510d3418298228a46dd3e0ddb7c5b8/Sprint%201%20-%20Sprint%202/Requirements.txt)
+- [Instructions](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/43da937add11b87ddb4a5eccbc1691d5014635dc/Sprint%201/INSTRUCTIONS.txt)
+- [Dependencies](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/2145980d9d510d3418298228a46dd3e0ddb7c5b8/Sprint%201%20-%20Sprint%202/Requirements.txt)
 
 ## Team members and roles:
 1. ALONZO, Cyan - Group Leader
