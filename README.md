@@ -7,3 +7,8 @@ Pedal Power is an interactive, Python-based GUI program that encourages sustaina
 
 ## Sprint 1 - 2:
 [Instructions](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/43da937add11b87ddb4a5eccbc1691d5014635dc/Sprint%201/INSTRUCTIONS.txt)
+
+## Team members and roles:
+1. ALONZO, Cyan - Group Leader
+2. BELDIA, Luis - Programmer
+3. ESTANDIAN, Geoffrey - Database Manager
