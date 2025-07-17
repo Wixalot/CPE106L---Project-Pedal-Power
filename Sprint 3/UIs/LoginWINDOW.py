@@ -155,7 +155,7 @@ class LoginWindow(QMainWindow):
 
                 if admin_result:
 
-                    from admin_ui import AdminWindow as admin
+                    from UIs.admin_ui import AdminWindow as admin
 
                     # closing the login window before opening the next UI
                     self.close()
