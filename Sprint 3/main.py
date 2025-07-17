@@ -1,9 +1,12 @@
-from LoginWINDOW import LoginWindow
 import sys
-import os
 
-# Importing the LoginWindow class from the UIs module
-ui_path = os.path.join(os.path.dirname(__file__), "Sprint 3", "UIs")
-sys.path.append(ui_path)
+# UIs Import
+from UIs.LoginWINDOW import execute, LoginWindow
+from UIs.UserInterface import User_Interface_Window
 
-# importing the LoginWindow class
+# Database Import
+from Database.table_db import *
+
+from PyQt5.QtWidgets import QApplication
+
+exec = execute()
