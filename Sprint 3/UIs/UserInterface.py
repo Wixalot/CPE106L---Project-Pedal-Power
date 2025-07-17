@@ -53,7 +53,7 @@ class User_Interface_Window(QMainWindow):
         def logout():
 
             # Log Out button functionality
-            from LoginWINDOW import LoginWindow
+            from UIs.LoginWINDOW import LoginWindow
 
             # Close the current window
             self.close()

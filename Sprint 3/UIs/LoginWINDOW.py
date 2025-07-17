@@ -170,7 +170,7 @@ class LoginWindow(QMainWindow):
 
                 elif user_result:
 
-                    from UserInterface import User_Interface_Window as UI
+                    from UIs.UserInterface import User_Interface_Window as UI
 
                     # closing the login window before opening the next UI
                     self.close()
