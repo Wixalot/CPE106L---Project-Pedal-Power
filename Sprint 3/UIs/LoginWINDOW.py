@@ -9,6 +9,7 @@ class LoginWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Pedal Power: Login")
+        self.setStyleSheet("QMainWindow { background-color: white; }")
 
         # Setting the fixed size: 800 - height, 600 - width
         self.setFixedSize(800, 600)
@@ -172,11 +173,29 @@ class LoginWindow(QMainWindow):
 
                     from UIs.UserInterface import User_Interface_Window as UI
 
+                    # Store the username for reference
+                    UserData = "Database/Users_log_Data.txt"
+
+                    # Check if the user exists in the log data file
+                    try:
+                        with open(UserData, "r") as f:
+                            lines = f.readlines()
+
+                            # Check if the username is already in the file
+                            if not any(username in line for line in lines):
+                                # If username not found, append it
+                                with open(UserData, "a") as f:
+                                    f.write(f"{username},[0,0,0,0,0,0,0]\n")
+
+                    except FileNotFoundError:
+                        with open(UserData, "w") as f:
+                            f.write(f"{username},[0,0,0,0,0,0,0]\n")
+
                     # closing the login window before opening the next UI
                     self.close()
 
                     # Show the main user interface window
-                    self.ui_window = UI()
+                    self.ui_window = UI(username)
                     self.ui_window.show()
 
                     # Clear the input fields after successful login

@@ -1,13 +1,19 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QFrame, QGroupBox, QPushButton
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QFrame, QGroupBox, QPushButton, QVBoxLayout, QLineEdit, QMessageBox
 from PyQt5.QtGui import QFont, QIcon
 from PyQt5.QtCore import Qt, QSize
 
 
 class User_Interface_Window(QMainWindow):
-    def __init__(self):
+    def __init__(self, username):
         super().__init__()
-        self.setWindowTitle("Pedal Power: User Interface")
+
+        # Store the username for display and functionality
+        self.username = username
+
+        # Set the window title to include the username
+        self.setWindowTitle(f"Pedal Power - {self.username}")
+        self.setStyleSheet("QMainWindow { background-color: white; }")
 
         # Setting the fixed size: 800 - height, 600 - width
         self.setFixedSize(800, 600)
@@ -29,6 +35,15 @@ class User_Interface_Window(QMainWindow):
         self.line.setGeometry(30, 80, 731, 16)
         self.line.setFrameShape(QFrame.HLine)
         self.line.setFrameShadow(QFrame.Sunken)
+
+        # Calling the Emissions Save Group function
+        self.setCentralWidget(Emissions_Save_Group(self, self.username))
+
+        # Calling the Weekly Chart Group function
+        self.setCentralWidget(Weekly_Chart_Group(self, self.username))
+
+        # Calling the Km Inputs function
+        self.Km_Inputs = Km_Inputs(self, self.username)
 
         # Calling the Log Out function
         self.Log_Out()
@@ -68,10 +83,18 @@ class User_Interface_Window(QMainWindow):
 
 def execute():
     app = QApplication(sys.argv)
-    window = User_Interface_Window()
+    window = User_Interface_Window("User")
     window.show()
     sys.exit(app.exec_())
 
 
 if __name__ == "__main__":
+    from UserModules.EmissionsSaved import Emissions_Save_Group
+    from UserModules.Weekly_Chart import Weekly_Chart_Group
+    from UserModules.Inputs import Km_Inputs
     execute()
+
+else:
+    from UIs.UserModules.EmissionsSaved import Emissions_Save_Group
+    from UIs.UserModules.Weekly_Chart import Weekly_Chart_Group
+    from UIs.UserModules.Inputs import Km_Inputs
