@@ -1,0 +1,1 @@
+This will serve as the barebones of our project, complete with login ui, business logic, reading and access logic
