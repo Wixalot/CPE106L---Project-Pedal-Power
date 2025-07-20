@@ -1,3 +1,0 @@
-alonzocyan@email.com,mapuaU
-beldialuis@email.com,password1
-geoffreyestandian@email.com,user1234
