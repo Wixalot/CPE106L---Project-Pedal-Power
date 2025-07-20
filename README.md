@@ -18,10 +18,6 @@ Pedal Power is an interactive, Python-based GUI program that encourages sustaina
 ### 🗃️ SQLite Database
 - Persistent storage of user data, actions, and eco-points.
 - Lightweight and portable for desktop environments.
-### 🌦️ Weather API Integration
-- Fetch real-time weather data to:
-1. Suggest eco-friendly actions (e.g., biking on sunny days).
-2. Provide context-aware prompts to users.
 ### 📊 Data Visualization with Matplotlib
 - Visual dashboards showing:
 1. Individual progress over time.
