@@ -1,3 +1,0 @@
-Alonzo,password
-Beldia,user123
-Geoffrey,something
