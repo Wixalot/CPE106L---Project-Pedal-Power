@@ -5,7 +5,7 @@ Pedal Power is an interactive, Python-based GUI program that encourages sustaina
 ## 🚀 Features
 ### ♻️ Community Engagement & Eco-Tracking
 - Encourage sustainable habits like recycling, biking, and energy-saving actions.
-- Track individual and community eco-actions with real-time scoring.
+- Track individual eco-actions with real-time scoring.
 ### 🧠 Python Data Structures & Optimization
 - Efficient tracking and scoring of eco-actions using optimized algorithms.
 - Smart challenge generation to maximize community impact.
