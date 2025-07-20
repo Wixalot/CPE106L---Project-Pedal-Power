@@ -2,43 +2,35 @@
 
 Pedal Power is an interactive, Python-based GUI program that encourages sustainability through biking. Biking is a sustainable and healthy mode of transportation. The application will enable users to input their rides and track how much they contribute to reducing their carbon footprint by using a bike as their mode of transportation. The app encourages users to continue biking through weekly challenges that suggest users ride a longer distance throughout the week and gives them virtual badges.
 
-## Features
-🚀 Features
-♻️ Community Engagement & Eco-Tracking
-Encourage sustainable habits like recycling, biking, and energy-saving actions.
-Track individual and community eco-actions with real-time scoring.
-🧠 Python Data Structures & Optimization
-Efficient tracking and scoring of eco-actions using optimized algorithms.
-Smart challenge generation to maximize community impact.
-🧱 Object-Oriented Design
-Modular classes for:
-User: Profile, actions, and eco-points.
-Action: Type, impact score, and timestamp.
-Reward: Unlockable incentives based on performance.
-Challenge: Community goals and progress tracking.
-🧩 MVC Architecture
-Clean separation of concerns for scalability and maintainability.
-Easy integration of new features and UI components.
-🗃️ SQLite Database
-Persistent storage of user data, actions, and eco-points.
-Lightweight and portable for desktop environments.
-🌐 API Integration
-Connect with environmental APIs (e.g., carbon footprint calculators) for real-time data.
-Enhance action scoring with verified environmental impact metrics.
-📊 Data Visualization with Matplotlib
-Visual dashboards showing:
-Individual progress over time.
-Community-wide impact and leaderboard trends.
-⚙️ FastAPI Backend
-RESTful API for:
-User management and authentication.
-Action logging and scoring.
-Leaderboard and challenge updates.
-🖥️ PyQT Desktop App
-User-friendly interface for:
-Logging eco-actions.
-Viewing personal and community stats.
-Joining and tracking challenges.
+## 🚀 Features
+### ♻️ Community Engagement & Eco-Tracking
+- Encourage sustainable habits like recycling, biking, and energy-saving actions.
+- Track individual and community eco-actions with real-time scoring.
+### 🧠 Python Data Structures & Optimization
+- Efficient tracking and scoring of eco-actions using optimized algorithms.
+- Smart challenge generation to maximize community impact.
+### 🧱 Object-Oriented Design
+- Modular classes for:
+1. User: Profile, actions, and eco-points.
+2. Action: Type, impact score, and timestamp.
+3. Reward: Unlockable incentives based on performance.
+4. Challenge: Community goals and progress tracking.
+### 🗃️ SQLite Database
+- Persistent storage of user data, actions, and eco-points.
+- Lightweight and portable for desktop environments.
+### 🌦️ Weather API Integration
+- Fetch real-time weather data to:
+1. Suggest eco-friendly actions (e.g., biking on sunny days).
+2. Provide context-aware prompts to users.
+### 📊 Data Visualization with Matplotlib
+- Visual dashboards showing:
+1. Individual progress over time.
+2. Community-wide impact and leaderboard trends.
+### 🖥️ PyQT Desktop App
+- User-friendly interface for:
+1. Logging eco-actions.
+2. Viewing personal and community stats.
+
 
 ## Gantt Chart:
 [Project_Sked_Group01](https://mymailmapuaedu-my.sharepoint.com/:x:/g/personal/cmaalonzo_mymail_mapua_edu_ph/EYb00BFohFNLunYTpnnjMlEBgQe3GJPqLP4N2inj1Oofnw)
