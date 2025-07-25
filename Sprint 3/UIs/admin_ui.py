@@ -6,10 +6,10 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidgetItem, QPushBu
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import Qt
 
-from LoginWINDOW import LoginWindow
-from view_ui import ViewWindow  # Integrated ViewWindow import
-from AdminModules.logout import logout
-from AdminModules.admin_features import add_user, update_user, remove_user # Import admin features for button actions
+from UIs.LoginWINDOW import LoginWindow
+from UIs.view_ui import ViewWindow  # Integrated ViewWindow import
+from UIs.AdminModules.logout import logout
+from UIs.AdminModules.admin_features import add_user, update_user, remove_user # Import admin features for button actions
 
 DB_PATH = 'Database/pedalpower.db'
 ICON_PATH = 'Assets/eye.png'
