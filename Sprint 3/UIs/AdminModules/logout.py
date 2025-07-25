@@ -1,4 +1,4 @@
-from LoginWINDOW import LoginWindow
+from UIs.LoginWINDOW import LoginWindow
 
 def logout(current_window):
     login_window = LoginWindow()
