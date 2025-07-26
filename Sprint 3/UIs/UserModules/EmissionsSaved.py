@@ -41,7 +41,23 @@ def Emissions_Save_Group(self, username):
 
         # Get the distance from the user in the database - Geoffrey Task
 
-        km = 10  # Replace with actual distance retrieval logic
+        conn = sqlite3.connect(file_path)
+        cursor = conn.cursor()
+
+        # Get the UserID of the given username
+        cursor.execute("SELECT UserID FROM Users WHERE Username = ?", (username,))
+        user = cursor.fetchone()
+
+        if user:
+            user_id = user[0]
+            cursor.execute("SELECT SUM(DistanceKM) FROM BikeRecords WHERE UserID = ?", (user_id,))
+            result = cursor.fetchone()
+            km = result[0] if result[0] else 0
+        else:
+            km = 0
+
+        conn.close()
+
         emissions_saved = Emissions_Save_Calculation(km)
 
         # Display the Emissions Saved
