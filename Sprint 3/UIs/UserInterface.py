@@ -43,7 +43,7 @@ class User_Interface_Window(QMainWindow):
         self.setCentralWidget(Weekly_Chart_Group(self, self.username))
 
         # Calling the Km Inputs function
-        self.Km_Inputs = Km_Inputs(self, self.username)
+        self.setCentralWidget(Km_Inputs(self, self.username))
 
         # Calling the Log Out function
         self.Log_Out()
@@ -91,10 +91,10 @@ def execute():
 if __name__ == "__main__":
     from UserModules.EmissionsSaved import Emissions_Save_Group
     from UserModules.Weekly_Chart import Weekly_Chart_Group
-    from UserModules.Inputs import Km_Inputs
+    from UserModules.Inputs import *
     execute()
 
 else:
     from UIs.UserModules.EmissionsSaved import Emissions_Save_Group
     from UIs.UserModules.Weekly_Chart import Weekly_Chart_Group
-    from UIs.UserModules.Inputs import Km_Inputs
+    from UIs.UserModules.Inputs import *

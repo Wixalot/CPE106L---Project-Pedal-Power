@@ -185,11 +185,13 @@ class LoginWindow(QMainWindow):
                             if not any(username in line for line in lines):
                                 # If username not found, append it
                                 with open(UserData, "a") as f:
-                                    f.write(f"{username},[0,0,0,0,0,0,0]\n")
+                                    f.write(
+                                        f"{username},[-1,-1,-1,-1,-1,-1,-1]\n")
 
+                    # If the file does not exist, create it and add the user
                     except FileNotFoundError:
                         with open(UserData, "w") as f:
-                            f.write(f"{username},[0,0,0,0,0,0,0]\n")
+                            f.write(f"{username},[-1,-1,-1,-1,-1,-1,-1]\n")
 
                     # closing the login window before opening the next UI
                     self.close()
