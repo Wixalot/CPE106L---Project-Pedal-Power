@@ -41,6 +41,9 @@ def Emissions_Save_Group(self, username):
 
         # Get the distance from the user in the database - Geoffrey Task
 
+        # Get the distance from the user in the database - Geoffrey Task
+        import sqlite3
+
         conn = sqlite3.connect(file_path)
         cursor = conn.cursor()
 
@@ -89,3 +92,29 @@ def Emissions_Save_Group(self, username):
             }
         """)
     Emissions_label.setAlignment(Qt.AlignLeft | Qt.AlignVCenter)
+
+    # Add a method to refresh the emissions saved display
+    def refresh_emissions():
+        try:
+            conn = sqlite3.connect(file_path)
+            cursor = conn.cursor()
+            cursor.execute(
+                "SELECT UserID FROM Users WHERE Username = ?", (username,))
+            user = cursor.fetchone()
+            if user:
+                user_id = user[0]
+                cursor.execute(
+                    "SELECT SUM(DistanceKM) FROM BikeRecords WHERE UserID = ?", (user_id,))
+                result = cursor.fetchone()
+                km = result[0] if result[0] else 0
+            else:
+                km = 0
+            conn.close()
+            emissions_saved = Emissions_Save_Calculation(km)
+            Number_emissions.setText(f"{emissions_saved:.2f}")
+        except Exception as e:
+            print(f"An error occurred during refresh: {e}")
+
+    # Expose the refresh function for external calls
+    emissions_group.refresh_emissions = refresh_emissions
+    self.refresh_emissions = refresh_emissions
