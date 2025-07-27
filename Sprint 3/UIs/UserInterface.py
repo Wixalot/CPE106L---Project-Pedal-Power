@@ -36,14 +36,18 @@ class User_Interface_Window(QMainWindow):
         self.line.setFrameShape(QFrame.HLine)
         self.line.setFrameShadow(QFrame.Sunken)
 
-        # Calling the Emissions Save Group function
-        self.setCentralWidget(Emissions_Save_Group(self, self.username))
+        # Create a container widget and layout for the group boxes
+        from PyQt5.QtWidgets import QWidget, QVBoxLayout
+        container = QWidget(self)
+        layout = QVBoxLayout(container)
 
-        # Calling the Weekly Chart Group function
-        self.setCentralWidget(Weekly_Chart_Group(self, self.username))
+        # Add all group boxes to the layout
+        layout.addWidget(Emissions_Save_Group(self, self.username))
+        layout.addWidget(Weekly_Chart_Group(self, self.username))
+        layout.addWidget(Km_Inputs(self, self.username))
 
-        # Calling the Km Inputs function
-        self.setCentralWidget(Km_Inputs(self, self.username))
+        # Set the container as the central widget
+        self.setCentralWidget(container)
 
         # Calling the Log Out function
         self.Log_Out()
