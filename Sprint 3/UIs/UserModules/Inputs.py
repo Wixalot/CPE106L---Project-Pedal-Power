@@ -54,9 +54,14 @@ def Km_Inputs(self, username):
 
         try:
             from UIs.UserModules.Weekly_Chart import refresh_chart
+            from UIs.UserModules.EmissionsSaved import refresh_emissions
+            
         except ImportError:
-            def refresh_chart(username):
+            def refresh_chart():
                 pass
+            def refresh_emissions():
+                pass
+
 
         file_path = "Database/Users_log_Data.txt"
         db_path = "Database/pedalpower.db"
@@ -180,8 +185,16 @@ def Km_Inputs(self, username):
             lines[idx] = new_line
             with open(file_path, "w") as f:
                 f.writelines(lines)
+            
+            # Refresh the Chart after week reset
             try:
                 self.refresh_weekly_chart()
+            except Exception:
+                pass
+
+            # Refresh emissions after every input
+            try:
+                self.refresh_emissions()
             except Exception:
                 pass
 
