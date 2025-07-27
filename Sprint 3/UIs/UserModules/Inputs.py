@@ -162,6 +162,12 @@ def Km_Inputs(self, username):
             except Exception:
                 pass  # Ignore chart errors for now
 
+             # Refresh emissions to reflect new data
+            try:
+                self.refresh_emissions()
+            except Exception:
+                pass  # Ignore emission errors for now
+
             # Now reset the week if it's complete
             if file_values.count(-1) == 0:
                 QMessageBox.information(
@@ -174,6 +180,11 @@ def Km_Inputs(self, username):
                 # Optionally refresh chart again after reset
                 try:
                     self.refresh_weekly_chart()
+                except Exception:
+                    pass
+                # Optionally refresh emissions again after reset
+                try:
+                    self.refresh_emissions()
                 except Exception:
                     pass
         else:
