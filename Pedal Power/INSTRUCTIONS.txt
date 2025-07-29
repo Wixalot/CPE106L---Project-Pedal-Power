@@ -2,12 +2,6 @@ NOTE: After Installing PyQt, please install your respective matplotlib - pip ins
 
 Python version should be 3.10 or later
 
-Here are the connections:
-
-Login UI ---> mock database (txt file) ---> User UI
-
-Admin UI ---> pedal power database (only lists out the users from the database)
-
 
 INSTRUCTIONS:
 1. git clone https://github.com/Wixalot/CPE106L---Project-Pedal-Power.git
@@ -23,6 +17,3 @@ NOTE! X stands for the version of python you have
 7. Run the main program - python main.py
 7.1. If by chance you can't run any due to an error you're missing a few dependencies on ubuntu/Debian-based systems. Run the command
 Installation of Dependencies: sudo apt-get install libxcb-xinerama0 libxkbcommon-x11-0
-
-
- 
