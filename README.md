@@ -1,6 +1,6 @@
 # PEDAL POWER
 
-Pedal Power is an interactive, Python-based GUI program that encourages sustainability through biking. Biking is a sustainable and healthy mode of transportation. The application will enable users to input their rides and track how much they contribute to reducing their carbon footprint by using a bike as their mode of transportation. The app encourages users to continue biking through weekly challenges that suggest users ride a longer distance throughout the week and gives them virtual badges.
+Pedal Power is an interactive, Python-based GUI program that encourages sustainability through biking. The application enables users to input their rides and track how much they contribute to reducing their carbon footprint by using a bike as their mode of transportation. By visualizing the environmental impact of each ride and comparing it to emission-heavy alternatives, the app helps promote eco-conscious travel decisions and supports a culture of sustainable mobility.
 
 ## 🚀 Features
 ### ♻️ Community Engagement & Eco-Tracking
