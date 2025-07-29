@@ -111,4 +111,4 @@ Sprint 3 delivers the complete and fully functional version of the Pedal Power p
 # 👥 Team Members and Roles:
 1. **ALONZO, Cyan** - Group Leader
 2. **BELDIA, Luis** - Programmer
-3. **ESTANDIAN, Geoffrey** -
+3. **ESTANDIAN, Geoffrey** - Database Manager
