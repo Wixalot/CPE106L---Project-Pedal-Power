@@ -1,4 +1,6 @@
-NOTE: After Installing PyQt, please install your respective matplotlib - pip install matplotlib PyQt5
+NOTE: After Installing PyQt, please install your respective matplotlib and numpy 
+- pip install matplotlib PyQt5
+- pip install numpy
 
 Python version should be 3.10 or later
 
