@@ -4,28 +4,26 @@ Pedal Power is an interactive, Python-based GUI program that encourages sustaina
 
 ## 🚀 Features
 ### ♻️ Community Engagement & Eco-Tracking
-- Encourage sustainable habits like recycling, biking, and energy-saving actions.
-- Track individual eco-actions with real-time scoring.
+- Encourage sustainable habits like biking and energy-saving actions.
+- Track individual eco-actions and visualize environmental impact over time.
 ### 🧠 Python Data Structures & Optimization
-- Efficient tracking and scoring of eco-actions using optimized algorithms.
-- Smart challenge generation to maximize community impact.
+- Efficient data management and processing for ride tracking and carbon savings calculation.  
+- Use of optimized algorithms to calculate emission reductions from bike trips.  
 ### 🧱 Object-Oriented Design
 - Modular classes for:
-  1. User: Profile, actions, and eco-points.
-  2. Action: Type, impact score, and timestamp.
-  3. Reward: Unlockable incentives based on performance.
-  4. Challenge: Community goals and progress tracking.
+  1. User: Stores profile and ride history
+  2. BikeRide: Distance, duration, carbon saving calculation  
+  4. Carbon Calculator: Utility class to convert distance to estimated CO₂ savings  
 ### 🗃️ SQLite Database
-- Persistent storage of user data, actions, and eco-points.
+- Persistent storage of user data, actions, and ride logs.
 - Lightweight and portable for desktop environments.
 ### 📊 Data Visualization with Matplotlib
-- Visual dashboards showing:
-  1. Individual progress over time.
-  2. Community-wide impact and leaderboard trends.
+Clear, engaging visualizations that highlight:  
+- Individual sustainability impact over time (e.g., total rides, distance covered, CO₂ savings) - Community-wide metrics such as total carbon reduction and collective participation trends  
 ### 🖥️ PyQT Desktop App
-- User-friendly interface for:
-  1. Logging eco-actions.
-  2. Viewing personal and community stats.
+- Intuitive, emotionally warm interface for:  
+  1. Logging bike rides and other sustainable activities  
+  2. Exploring personal and community sustainability metrics through dynamic visual feedback  
 
 ## Gantt Chart:
 [Project_Sked_Group01](https://mymailmapuaedu-my.sharepoint.com/:x:/g/personal/cmaalonzo_mymail_mapua_edu_ph/EYb00BFohFNLunYTpnnjMlEBgQe3GJPqLP4N2inj1Oofnw)
