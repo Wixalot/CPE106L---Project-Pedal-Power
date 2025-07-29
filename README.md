@@ -43,6 +43,7 @@ Pedal Power is a cross-platform desktop application designed for seamless operat
 - Python 3.10 or later
 - PyQt5 (version 5.15.11)
 - matplotlib
+- numpy
 
 **Additional Notes:**
 - For Ubuntu, ensure all required system dependencies for PyQt5 and matplotlib are installed.
