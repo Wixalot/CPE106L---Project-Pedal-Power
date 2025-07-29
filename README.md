@@ -76,7 +76,7 @@ Improvements and New Features in Sprint 2:
 
 Links:
 [Requirements](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/90fe39f9ad6a933e846c96f0551b893add7f7638/Sprint%202/Requirements.txt)
-[Instructions]([https://mymailmapuaedu-my.sharepoint.com/:x:/g/personal/cmaalonzo_mymail_mapua_edu_ph/EYb00BFohFNLunYTpnnjMlEBgQe3GJPqLP4N2inj1Oofnw](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/90fe39f9ad6a933e846c96f0551b893add7f7638/Sprint%202/INSTRUCTIONS.txt))
+[Instructions](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/90fe39f9ad6a933e846c96f0551b893add7f7638/Sprint%202/INSTRUCTIONS.txt)
 
 ## Sprint 3:
 
@@ -94,8 +94,8 @@ Improvements and New Features in Sprint 3:
 - Expanded Requirements: The project now requires both PyQt5 and matplotlib, reflecting the new data visualization capabilities.
 
 Links:
-[Requirements]([https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/90fe39f9ad6a933e846c96f0551b893add7f7638/Sprint%202/Requirements.txt](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/90fe39f9ad6a933e846c96f0551b893add7f7638/Sprint%203/Requirements.txt))
-[Instructions]([[https://mymailmapuaedu-my.sharepoint.com/:x:/g/personal/cmaalonzo_mymail_mapua_edu_ph/EYb00BFohFNLunYTpnnjMlEBgQe3GJPqLP4N2inj1Oofnw](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/90fe39f9ad6a933e846c96f0551b893add7f7638/Sprint%202/INSTRUCTIONS.txt)](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/90fe39f9ad6a933e846c96f0551b893add7f7638/Sprint%203/INSTRUCTIONS.txt))
+[Requirements](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/90fe39f9ad6a933e846c96f0551b893add7f7638/Sprint%203/Requirements.txt)
+[Instructions](https://github.com/Wixalot/CPE106L---Project-Pedal-Power/blob/90fe39f9ad6a933e846c96f0551b893add7f7638/Sprint%203/INSTRUCTIONS.txt)
 
 ## Sprint 3: 
 
