@@ -49,6 +49,8 @@ Additional Notes:
 For Ubuntu, ensure all required system dependencies for PyQt5 and matplotlib are installed.
 The application is best run in a virtual environment for dependency management.
 
+
+
 ## Sprint 1:
 Sprint 1 establishes the foundational structure of the project, focusing on implementing a basic user login system. The following components are included:
 
