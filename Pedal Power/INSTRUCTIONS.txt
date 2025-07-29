@@ -1,6 +1,7 @@
 NOTE: After Installing PyQt, please install your respective matplotlib and numpy 
 - pip install matplotlib PyQt5
 - pip install numpy
+Important! Make sure to have your pip installed - sudo apt install Python3-pip
 
 Python version should be 3.10 or later
 
